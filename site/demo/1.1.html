@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style/global.css"/>
+<script type="text/javascript" src="../download/finger-chart-0.8/js/swfobject.js"></script>
+<script type="text/javascript" src="../download/finger-chart-0.8/js/finger.js"></script>
+<title>Document</title>
+</head>
+
+<body class="doc">
+<!--Line-->
+<h3>线图</h3>
+<div class="swf"><div id="c1">chart here</div></div>
+<script>
+var dataURL = "../download/finger-chart-0.8/";
+finger.initPath(dataURL);
+finger.output("line","c1",dataURL+"data/xml/linechart_data1.xml",{id:"mySWF",cssStr:"gContainer {line-mode:bezier}"});
+var count = 0;
+function startAddData() {
+	setInterval(addDataRuntime,1000);
+}
+function addDataRuntime() {
+	var randomData = {日期:"6月"+count+"日",参考线:"300",频道一:Math.random()*300,频道二:Math.random()*300+300};
+	finger.addData("mySWF",randomData,"replace");
+	count++;
+}
+</script>
+<!--LineEnd-->
+<label><input type="checkbox" value="" onclick="startAddData()"/> 实时加载数据</label>
+<a href="http://v.youku.com/v_show/id_XMjMyNjk1MjI4.html" target="_blank"> 视频演示</a>
+<h3>技巧</h3>
+<pre>
+1.点击右键可以查看原始数据
+2.通过CSS可以设定线的宽度，参见<a href="../doc/2.3.html">皮肤和样式部分</a>
+<img src="../image/line2.png" />
+3.当line-width &gt;= dot-width*2时，可以实现无点显示的效果
+<img src="../image/line3.png" />
+4.通过给CSS设置line-mode:bezier，可以实现曲线效果
+示例CSS：gContainer {line-mode:bezier}
+<img src="../image/line5.png" />
+5.动态添加数据节点
+var randomData = {日期:"6月"+count+"日",参考线:"300",频道一:Math.random()*300,频道二:Math.random()*300+300};
+finger.addData("mySWF",randomData,"replace");
+</pre>
+<!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<div id="footer">support by <a href="/">RIAMeeting</a></div>
+<!--google code-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8015961-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!--/google code-->
+<!-- #EndLibraryItem -->
+</body>
+</html>

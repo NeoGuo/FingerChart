@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style/global.css"/>
+<title>Document</title>
+</head>
+
+<body class="doc">
+<h2>皮肤与样式</h2>
+<p>Finger采用一种灵活的组合方式来定义外观，它就是skin和css的有机结合。</p>
+<h3>CSS</h3>
+<p>CSS定义(更新中)：</p>
+<code>
+/*color-collection是图表图形所需的颜色数组*/<br />
+global {color-collection:0xff0000 0xff0078 0xff00d2 0x9c00ff 0x0c00ff 0x00a2ff 0x09c700 0xe7b300 0xe75c00;}<br />
+/*定义图表背景颜色和背景透明度*/<br />
+chart {bg-colors:0xFFFFFF 0xc8c8c8;bg-alphas:100 100;line-colors:0x000000 0x000000;line-alphas:0 20}<br />
+/*定义坐标系样式*/<br />
+axis {grid-height:50;padding-left:40;padding-top:30;padding-right:20;padding-bottom:50;offset-v:20;color:0x000000;bottom-color:0xFFFFFF;line-colors:0x272727 0x000000;line-alphas:100 100}<br />
+/*定义图形的样式，包括文本颜色，参考线颜色，线的宽度*/<br />
+gContainer {color:0x000000;benchmark-color:0x000000;line-width:2;dot-width:2}<br />
+/*定义鼠标提示的样式，包括文本颜色，和背景颜色*/<br />
+tContainer {color:0x000000;tipbg-color:0xFFFFFF;tipbg-alpha:100;border-width:3;border-color:0x000000;border-alpha:20}<br />
+/*定义插件的样式，包括颜色*/<br />
+pContainer {color:0x000000;}<br />
+/*定义图表说明的样式*/<br />
+legend {color:0xFFFFFF;padding-top:0;padding-left:0;benchmark-color:0xCCCCCC;bg-color:0x666666;bg-alpha:100}
+</code>
+<p>因为这些样式基本都是在Skin中得到应用，因此通过修改Skin，您可以添加更多的样式属性支持。具体参见下面的Skin部分。</p>
+<p>一段实例</p>
+<code>
+var cssStr = "chart {bg-colors:0x333333 0x000000;bg-alphas:100 100;line-colors:0xFFFFFF 0xFFFFFF;line-alphas:0 10}";
+cssStr += "axis {color:0xFFFFFF;bottom-color:0xFFFFFF;line-colors:0xFF0000 0x000000;line-alphas:100 100}";
+cssStr += "tContainer {color:0xFFFFFF;tipbg-color:0x333333;tipbg-alpha:100;border-width:1;border-color:0xFFFFFF;border-alpha:20}";
+</code>
+<img src="../image/line4.png" width="100%"/>
+<p style="display:none;"><a href="../style-exploer/index.html" target="_blank">点击这里运行在线CSS预览</a></p>
+<h3>SKIN</h3>
+<p>Finger所使用的SKIN是一个包含了素材类的SWF文件，基于skin.fla，您可以复制这个文件，修改素材来创建新的SKIN。注意所有 素材都位于库中，您在时间轴上将看不到任何内容。打开库面板，能看到所有的图形素材：</p>
+<p><img src="img/fla_libs.png" width="302" height="210" alt="lib" /></p>
+<p>每一个Skin素材类，都实现updateDisplayList方法，并接受两个参数：parm和style，parm是跟素材相关的一些属性，比如要适应的宽度和高度，style则是在CSS样式表中定义的属性引用。看一段代码示例：</p>
+<pre>
+function updateDisplayList(parm:Object,style:Object):void {
+	graphics.clear();
+	graphics.beginFill(style["bgColor"],style["bgAlpha"]/100);
+	graphics.drawRect(0,0,parm.width,parm.height);
+	graphics.endFill();
+}
+</pre>
+<p>使用skin.swf所产生的默认效果：</p>
+<img src="../image/line6.png" width="100%"/>
+<!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<div id="footer">support by <a href="/">RIAMeeting</a></div>
+<!--google code-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8015961-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!--/google code--><!-- #EndLibraryItem -->
+</body>
+</html>

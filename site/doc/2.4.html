@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style/global.css"/>
+<title>Document</title>
+</head>
+
+<body class="doc">
+<h2>插件机制说明</h2>
+<p>您可以基于<a href="../api/com/riameeting/finger/plugin/IChartPlugin.html" target="_blank">IChartPlugin</a>接口，开发独立的图表插件，编译为单独的SWF文件，嵌入图表中发挥作用。</p>
+<p>嵌入插件的方式为，设置plugin参数，比如：</p>
+<pre>var LineChartConfig = {...,plugin:"plugin/context_menu.swf",...};</pre>
+<p>再来看一下右键菜单插件的代码片段:</p>
+<pre>
+public class context_menu extends MovieClip implements IChartPlugin {
+	
+	private var container:IPluginContainer;
+	private var myContextMenu:ContextMenu;
+	private var dataset:DatasetVO;
+	private var chartRef:IChart;
+	
+	public function context_menu() {
+		
+	}
+	
+	public function initPlugin(container:IPluginContainer):void {
+		this.container = container;
+		chartRef = container.chartRef;
+		dataset = container.dataset;
+		myContextMenu = new ContextMenu();
+		(chartRef as Sprite).contextMenu = myContextMenu;
+		myContextMenu.hideBuiltInItems();
+		...
+	}
+	
+	public function updateDisplayList(w:uint,h:uint):void {
+		
+	}
+	
+}
+
+</pre>
+<!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<div id="footer">support by <a href="/">RIAMeeting</a></div>
+<!--google code-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8015961-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!--/google code--><!-- #EndLibraryItem -->
+</body>
+</html>

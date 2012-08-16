@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>com.riameeting.fingerchart</groupId>
+    <artifactId>finger-chart-superpom</artifactId>
+    <version>0.8</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.riameeting.fingerchart</groupId>
+  <artifactId>finger-chart-core-lib</artifactId>
+  <version>0.8</version>
+  <packaging>swc</packaging>
+
+  <name>Finger Chart Core Library</name>
+
+  <build>
+    <sourceDirectory>src/main/flex</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.flexmojos</groupId>
+        <artifactId>flexmojos-maven-plugin</artifactId>
+        <version>${flexmojos.version}</version>
+        <extensions>true</extensions>
+        <dependencies>
+						<dependency>
+							<groupId>com.adobe.flex</groupId>
+							<artifactId>compiler</artifactId>
+							<version>${flex.version}</version>
+							<type>pom</type>
+						</dependency>
+					</dependencies>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.riameeting.fingerchart</groupId>
+      <artifactId>common-lib</artifactId>
+      <version>0.8</version>
+      <type>swc</type>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.adobe</groupId>
+      <artifactId>as3corelib</artifactId>
+      <version>${as3corelib.version}</version>
+      <type>swc</type>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.greensock</groupId>
+      <artifactId>TweenLiteLib</artifactId>
+      <version>${TweenLiteLib.version}</version>
+      <type>swc</type>
+      <scope>compile</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>

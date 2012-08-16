@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>com.riameeting.fingerchart</groupId>
+    <artifactId>finger-chart-superpom</artifactId>
+    <version>0.8</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.riameeting.fingerchart</groupId>
+  <artifactId>finger-chart-main</artifactId>
+  <version>0.8</version>
+  <packaging>pom</packaging>
+  <name>Finger Chart Main</name>
+
+  <modules>
+    <module>area_chart</module>
+    <module>bar_chart</module>
+    <module>bubble_chart</module>
+    <module>column_chart</module>
+    <module>line_chart</module>
+    <module>pie_chart</module>
+    <module>plot_chart</module>
+  </modules>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>com.riameeting.fingerchart</groupId>
+      <artifactId>finger-chart-core-lib</artifactId>
+      <version>0.8</version>
+      <type>swc</type>
+    </dependency>
+  </dependencies>
+</project>
