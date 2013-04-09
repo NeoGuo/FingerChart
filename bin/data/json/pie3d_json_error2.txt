@@ -1,0 +1,1 @@
+{"config":{"showItemTotal":"1","categoryField":"日期","yTitle":" ","compare":"虚线：同期 实线：当期","qualifier":"元","yField":"value"},"dataset":[{"日期":"数字彩","value":"1262660"},{"日期":"高频彩","value":"1139816"},{"日期":"足彩","value":"7158406"},{"日期":"北单","value":"987108"},{"日期":"竞篮","value":"1492706"},{"日期":"竞足","value":"2379644"}]}

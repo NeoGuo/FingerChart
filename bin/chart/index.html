@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>chart</title>
+	<meta name="description" content="" />
+	<style>
+		html, body { height:100%; overflow:hidden;}
+		body { margin:0; }
+	</style>
+	<script src="js/swfobject.js"></script>
+	<script src="js/finger.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script>
+	//$('#end').add('123');
+		$(function(){
+			var fObj={ "chart": {  "yAxisName" : "账户数" ,   "divlinealpha" : "0" ,   "showalternatevgridcolor" : "0" ,   "plotbordercolor" : "999999" ,   "plotfillangle" : "330" ,   "canvasbordercolor" : "999999" ,   "canvasborderthickness" : "1" ,   "bgcolor" : "F1F1F1" ,   "baseFontSize" : "12",  "decimals" : "2",  "caption" : "投注与充值 对应人数" }, "data" : [{ "label" : "登录", "value" : "38208", "tooltext" : "38208人 86119次"},{ "label" : "投注", "value" : "32552", "tooltext" : "32552人 91001次"},{ "label" : "充值", "value" : "4766", "tooltext" : "4766人 5348次"} ]};
+			//var fObj={"chart":{"xAxisName":"虚线:当期 实线:同期","palette":"4","linethickness":"1","anchorradius":"2","numvdivlines":"22","numdivlines":"4","baseFontSize":"12","decimals":"2","caption":"注册与有效环比"},"categories":[{"category":[{"label":"04-06\\n03-29"},{"label":"04-07\\n03-30"},{"label":"04-08\\n03-31"},{"label":"04-09\\n04-01"},{"label":"04-10\\n04-02"},{"label":"04-11\\n04-03"},{"label":"04-12\\n04-04"},{"label":"04-13\\n04-05"},{"label":"04-06\\n03-29"},{"label":"04-07\\n03-30"},{"label":"04-08\\n03-31"},{"label":"04-09\\n04-01"},{"label":"04-10\\n04-02"},{"label":"04-11\\n04-03"},{"label":"04-12\\n04-04"},{"label":"04-13\\n04-05"},{"label":"04-06\\n03-29"},{"label":"04-07\\n03-30"},{"label":"04-08\\n03-31"},{"label":"04-09\\n04-01"},{"label":"04-10\\n04-02"},{"label":"04-11\\n04-03"},{"label":"04-12\\n04-04"},{"label":"04-13\\n04-05"}]}],"dataset":[{"color":"ff0000","seriesname":"注册-虚线","dashed":1,"data":[{"value":"16"},{"value":"11"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"22"},{"value":"15"},{"value":"17"},{"value":"16"},{"value":"11"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"22"},{"value":"15"},{"value":"17"},{"value":"16"},{"value":"11"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"22"},{"value":"15"},{"value":"17"}]},{"color":"3333ff","seriesname":"注册充值-虚线","dashed":1,"data":[{"value":"1"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"993300","seriesname":"首次充值-虚线","dashed":1,"data":[{"value":"1"},{"value":"2"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"2"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"2"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"ffff00","seriesname":"首次投注-虚线","dashed":1,"data":[{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"ff0000","seriesname":"注册","data":[{"value":"12"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"12"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"12"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"1"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"3333ff","seriesname":"注册充值","data":[{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"993300","seriesname":"首次充值","data":[{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]},{"color":"ffff00","seriesname":"首次投注","data":[{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"},{"value":"0"}]}],"styles":{"definition":[{"param":"_xScale","start":"0","duration":"0.5","type":"ANIMATION","name":"XScaleAnim"},{"param":"_yscale","start":"0","duration":"0.5","type":"ANIMATION","name":"YScaleAnim"},{"param":"_yscale","start":"0","duration":"0.5","type":"ANIMATION","name":"XAnim"},{"param":"_alpha","start":"0","duration":"0.5","type":"ANIMATION","name":"AlphaAnim"}],"application":[{"styles":"XScaleAnim,YScaleAnim,AlphaAnim","toobject":"CANVAS"},{"styles":"XScaleAnim,AlphaAnim","toobject":"DIVLINES"},{"styles":"YScaleAnim,AlphaAnim","toobject":"VDIVLINES"},{"styles":"YScaleAnim,AlphaAnim","toobject":"HGRID"}]}};
+			finger.setJSONData('PieChart3D',"altContent",fObj,760,300,"idontkonw");
+		}
+		)
+</script>
+</head>
+<body>
+	<div id="chart">
+		<div id="altContent">
+			<h1>chart</h1>
+		</div>
+        <div id="end">
+        </div>
+	</div>
+</body>
+</html>

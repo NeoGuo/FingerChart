@@ -1,0 +1,7 @@
+global {color-collection:0x8FA42D 0x808080 0x3781DD 0x0EA149 0x8FA42D 0xFF7800 0xE10A5B 0xFFBA00 0x770CEF 0x39CDB3;}
+chart {bg-colors:0xFFFFFF 0xFFFFFF;bg-alphas:100 100;}
+axis {grid-height:45;offset-x:40;offset-y:10;offset-v:0;color:0x666666;line-colors:0xC0C0C0 0xC0C0C0;}
+gContainer {color:0x000000;benchmark-color:0xCCCCCC;line-width:2;line-mode:line;dot-width:4}
+tContainer {color:0x000000;tipbg-color:0xFFFFFF;}
+pContainer {color:0x000000;}
+legend {color:0xFFFFFF;padding-top:30;padding-left:0;benchmark-color:0xCCCCCC;bg-color:0x666666;bg-alpha:100;}

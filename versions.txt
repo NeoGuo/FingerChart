@@ -1,0 +1,38 @@
+版本说明文件
+
+v20120612版
+	1.所有图表X,Y轴需要延长一点
+	2.柱状图不需要把单位缩小
+	3.柱状图也需要进行单位转化（注：只要万和亿两个单位）
+	4.各项值都为0只需要对饼图进行提示
+	5.右侧列表的对齐方案，按照最长的进行自动缩进
+	6.其他bug
+更新文件
+chart.swf
+plugin\btn_List.swf
+plugin\MyColumnChart_list.swf
+plugin\pie_List.swf
+plugin\pie3d_List.swf
+
+v20120605版
+	1.修改没有单位时的显示问题
+	2.增加showItemTotal属性，用于控制列表的显示。
+	3.增加itemtotal属性，用户控制列表的显示。
+更新文件
+chart.swf
+js\finger.js
+plugin\pie3d_List.swf
+plugin\pie_List.swf
+plugin\MyColumnChart_list.swf
+plugin\btn_List.swf
+插件的修改主要是为了把文字统一修改为Tahoma字体
+
+v20120604版
+	1.修改比较型柱状图。
+	2.修复饼图的标签bug
+更新文件
+chart.swf
+plugin\CompareColumnChart_list.swf
+
+v20120601版
+	1.修改鼠标提示的显示方式

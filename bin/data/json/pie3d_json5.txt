@@ -1,0 +1,1 @@
+{"config":{"showItemTotal":"1","categoryField":"日期","yTitle":" ","compare":"虚线：同期 实线：当期","qualifier":"元","yField":"value"},"dataset":[{"日期":"代购","value":"288726","value_tooltext":""},{"日期":"合买","value":"47009","value_tooltext":""},{"日期":"追号","value":"24701","value_tooltext":""}]}

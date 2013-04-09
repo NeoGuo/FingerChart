@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>chart</title>
+	<meta name="description" content="" />
+	<style>
+		html, body { height:100%; overflow:hidden;}
+		body { margin:0; }
+	</style>
+	<script src="js/swfobject.js"></script>
+	<script src="js/finger.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script>
+	//$('#end').add('123');
+		$(function(){
+			var fObj={"chart":{"numbersuffix":"元","baseFontSize":"12","decimals":"2","showItemTotal":"1","caption":"投注与中奖 走势图"},"categories":[{"category":[{"label":"07-01"},{"label":"07-02"},{"label":"07-03"},{"label":"07-04"},{"label":"07-05"},{"label":"07-06"},{"label":"07-07"}]}],"dataset":[{"color":"ff0000","seriesname":"投注金额","data":[{"value":"47693"},{"value":"21526"},{"value":"2577"},{"value":"56004"},{"value":"125687"},{"value":"17461"},{"value":"224229"}]},{"color":"3333ff","seriesname":"总值","data":[{"value":"80942.34"},{"value":"12114.22"},{"value":"26358.45"},{"value":"0"},{"value":"65405"},{"value":"170044.29"},{"value":"8588.58"}]}],"styles":{"definition":[{"param":"_xScale","start":"0","duration":"0.5","type":"ANIMATION","name":"XScaleAnim"},{"param":"_yscale","start":"0","duration":"0.5","type":"ANIMATION","name":"YScaleAnim"},{"param":"_yscale","start":"0","duration":"0.5","type":"ANIMATION","name":"XAnim"},{"param":"_alpha","start":"0","duration":"0.5","type":"ANIMATION","name":"AlphaAnim"}],"application":[{"styles":"XScaleAnim, YScaleAnim,AlphaAnim","toobject":"CANVAS"},{"styles":"XScaleAnim,AlphaAnim","toobject":"DIVLINES"},{"styles":"YScaleAnim,AlphaAnim","toobject":"VDIVLINES"},{"styles":"YScaleAnim,AlphaAnim","toobject":"HGRID"}]}}
+			finger.setJSONData('AreaChart',"altContent",fObj,760,300,"idontknow2");
+		}
+		)
+</script>
+</head>
+<body>
+	<div id="chart">
+		<div id="altContent">
+			<h1>chart</h1>
+		</div>
+        <div id="end">
+        </div>
+	</div>
+</body>
+</html>

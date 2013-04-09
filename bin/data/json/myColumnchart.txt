@@ -1,0 +1,40 @@
+{
+	"config": {
+		"categoryField": "彩种",
+		"yTitle": "投注用户分布",
+		"qualifier": "元",
+		"yField": "value"
+	},
+	"dataset": [
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"22428户 新825",
+		"value": "9991999"
+	},
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"22428户 新825",
+		"value": "99"
+	},
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"22428户 新825",
+		"value": "35"
+	},
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"22428户 新825",
+		"value": "35"
+	},
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"",
+		"value": "0"
+	},
+	{
+		"彩种": "数字彩",
+		"value_tooltext":"",
+		"value": "0"
+	}
+	]
+}

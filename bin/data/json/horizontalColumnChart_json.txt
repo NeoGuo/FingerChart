@@ -1,0 +1,1 @@
+{"config":{"showItemTotal":"1","categoryField":"日期","yTitle":"账户数","compare":"虚线：同期 实线：当期","qualifier":"%","yField":"value"},"dataset":[{"日期":"注册","value":"29","value_tooltext":"9999人"},{"日期":"注册并充值","value":"22","value_tooltext":"2264人 221060.47元"},{"日期":"首次充值","value":"99","value_tooltext":"2817人 271628.47元"},{"日期":"首次投注","value":"10.2","value_tooltext":"0人 0元"}]}

@@ -1,0 +1,1 @@
+{"config":{"showItemTotal":"1","categoryField":"日期","yTitle":" ","compare":"虚线：同期 实线：当期","qualifier":"人","yField":"value"},"dataset":[{"日期":"新用户","value":"3282"},{"日期":"老用户","value":"45112"}]}

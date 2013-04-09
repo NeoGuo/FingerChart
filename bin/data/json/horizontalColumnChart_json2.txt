@@ -1,0 +1,1 @@
+{"config":{"showItemTotal":"1","categoryField":"日期","yTitle":"金额","compare":"虚线：同期 实线：当期","qualifier":"元","yField":"value"},"dataset":[{"日期":"投注","value":"7558977"},{"日期":"充值","value":"3589318.64"}]}

@@ -1,0 +1,26 @@
+{
+	"config": {
+		"categoryField": "彩种",
+		"yTitle": "投注与充值 对应人数",
+		"qualifier": "人",
+		"yField": "value,test"
+	},
+	"dataset": [{
+		"彩种": "登录",
+		"value": "1698",
+		"test": "698",
+		"value_tooltext": "38208人 86119次"
+	},
+	{
+		"彩种": "投注与充值 对应人数",
+		"value": "134561178",
+		"test": "698",
+		"value_tooltext": "32552人 91001次"
+	},
+	{
+		"彩种": "充值",
+		"value": "1000000",
+		"test": "698",
+		"value_tooltext": "4766人 5348次111111"
+	}]
+}

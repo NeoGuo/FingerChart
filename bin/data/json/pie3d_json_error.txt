@@ -1,0 +1,30 @@
+{
+	"config": {
+		"showItemTotal": "1",
+		"categoryField": "日期",
+		"yTitle": " ",
+		"compare": "虚线：同期 实线：当期",
+		"qualifier": "元",
+		"yField": "value"
+	},
+	"dataset": [{
+		"日期": "竞足胜平负",
+		"value": "1294402",
+		"value_tooltext": ""
+	},
+	{
+		"日期": "竞足全场比分",
+		"value": "53460",
+		"value_tooltext": ""
+	},
+	{
+		"日期": "竞足总进球",
+		"value": "25056",
+		"value_tooltext": ""
+	},
+	{
+		"日期": "竞足半全场胜平负",
+		"value": "14096",
+		"value_tooltext": ""
+	}]
+}

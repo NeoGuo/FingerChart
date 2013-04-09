@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<componentPackage>
-	<component id="LineChart" class="com.riameeting.finger.flex.component.LineChart"/>
-	<component id="ColumnChart" class="com.riameeting.finger.flex.component.ColumnChart"/>
-	<component id="PieChart" class="com.riameeting.finger.flex.component.PieChart"/>
-	<component id="AreaChart" class="com.riameeting.finger.flex.component.AreaChart"/>
-	<component id="PlotChart" class="com.riameeting.finger.flex.component.PlotChart"/>
-	<component id="BubbleChart" class="com.riameeting.finger.flex.component.BubbleChart"/>
-</componentPackage>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>chart</title>
+	<meta name="description" content="" />
+	<script src="js/swfobject.js"></script>
+	<script src="js/finger.js"></script>
+	<script>
+		var fObj={ "chart": { "yaxismaxvalue" : "100" , "numbersuffix" : "%" , "baseFontSize" : "12", "decimals" : "2", "caption" : "投注用户分布" }, "data" : [{ "label" : "数字彩:22428户\n (新825)", "value" : "84"},{ "label" : "高频彩:646户\n (新46)", "value" : "2"},{ "label" : "足彩:2079户\n (新29)", "value" : "8"},{ "label" : "北单:1738户\n (新11)", "value" : "7.000000000000001"},{ "label" : "竞足:2675户\n (新127)", "value" : "10"},{ "label" : "竞篮:4103户\n (新101)", "value" : "15"} ]};
+		finger.setJSONData('PieChart3D',"altContent",fObj,760,300);
+</script>
+	<style>
+		html, body { height:100%; overflow:hidden;}
+		body { margin:0; }
+		#chart{width:760px;height:300px;}
+	</style>
+</head>
+<body>
+	<div id="chart">
+		<div id="altContent">
+			<h1>chart</h1>
+		</div>
+	</div>
+</body>
+</html>
